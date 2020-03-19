@@ -8,12 +8,12 @@
         name: "{{ package }}"
         state: latest
       tags:
-        - install
+        - a
    
     - name: "Starting Service"
+      tags:
+        - b
       service:
         name: "{{ package }}"
         state: started
         enabled: yes
-      tags:
-        - start
