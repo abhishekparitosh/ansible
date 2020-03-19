@@ -16,6 +16,6 @@
         state: started
         enabled: yes
 #      listen: "Starting {{ package }} Service" 
-#      register: serv_status
+      register: serv_status
 
-#    - debug: msg="{{ serv_status }}"
+    - debug: msg="{{ serv_status }}"
